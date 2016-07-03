@@ -5,7 +5,7 @@ use Mix.Config
 # your version control system.
 config :rumbl, Rumbl.Endpoint,
   secret_key_base: System.get_env("SECRET_KEY_BASE")
-
+SECRET_KEY_BASE="kL6WYerPauLjOTGxid7BdEghaTcVyH0Htxr3/kucjKF7JXah223EfbAO72HPXJfE"
 # Configure your database
 config :rumbl, Rumbl.Repo,
   adapter: Ecto.Adapters.Postgres,

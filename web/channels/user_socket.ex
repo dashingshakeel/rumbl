@@ -6,6 +6,7 @@ defmodule Rumbl.UserSocket do
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
+   timeout: 45_000
   # transport :longpoll, Phoenix.Transports.LongPoll
 
   # Socket params are passed from the client and can
@@ -14,7 +15,7 @@ defmodule Rumbl.UserSocket do
   # the socket that will be set for all channels, ie
   #
   #     {:ok, assign(socket, :user_id, verified_user_id)}
-  #
+ 
   # To deny connection, return `:error`.
   #
   # See `Phoenix.Token` documentation for examples in

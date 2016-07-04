@@ -12,6 +12,11 @@ body, form, ul, table {
 #msg-container {
 min-height: 190px;
 }
+body{
+  width: 700px;
+  text-align: center;
+margin-left: 200px;
+}
 
 /* Phoenix flash messages */
 .alert:empty { display: none; }

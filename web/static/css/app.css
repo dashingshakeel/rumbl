@@ -14,9 +14,9 @@ min-height: 190px;
 }
 body{
   width: 700px;
-  text-align: center;
 margin-left: 200px;
 }
+*{ margin: auto; }
 
 /* Phoenix flash messages */
 .alert:empty { display: none; }

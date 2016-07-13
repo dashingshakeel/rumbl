@@ -29,7 +29,8 @@ defmodule Rumbl.UserController do
     render(conn, "new.html", changeset: changeset)
    end
  end
- defp authenticate(conn,_opts) do
+ 
+defp authenticate(conn,_opts) do
   if conn.assigns.current_user do
     conn
   else 
@@ -39,6 +40,5 @@ defmodule Rumbl.UserController do
     |>halt()
   end
  end
-
 
 end

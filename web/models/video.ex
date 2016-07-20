@@ -1,11 +1,12 @@
 defmodule Rumbl.Video do
   use Rumbl.Web, :model
-@primary_key {:id, Rumbl.Permalink, autogenerate: true}
+@primary_key {:id,Rumbl.Permalink, autogenerate: true}
   schema "videos" do
     field :url, :string
     field :title, :string
     field :description, :string
     field :slug, :string
+    has_many :annotations, Rumbl.Annotation
     belongs_to :user, Rumbl.User
     belongs_to :category, Rumbl.Category
 
@@ -19,7 +20,7 @@ defmodule Rumbl.Video do
   Creates a changeset based on the `model` and `params`.
 
   If no params are provided, an invalid changeset is returned
-  with no validation performed.
+  with no validation performed.**666698884
   """
   def changeset(model, params \\ :empty) do
     model
